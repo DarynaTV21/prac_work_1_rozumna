@@ -1,0 +1,13 @@
+<mvc:View controllerName="com.btp.helloworld.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Button
+                id="helloWorldButton"
+                text="{i18n>helloWorldButton}"
+                type="Emphasized"
+                press=".onHelloWorldPress" />
+        </content>
+    </Page>
+</mvc:View>
