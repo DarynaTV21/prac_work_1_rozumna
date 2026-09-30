@@ -3,7 +3,7 @@ general:
   buildTool: "mta"
 
 service:
-  buildToolVersion: "MBTJ11N16"
+  buildToolVersion: "MBTJ25N24"
 
 stages:
   Build:
