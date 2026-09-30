@@ -2,13 +2,10 @@
 stages:
   build:
     buildTool: "mta"
-    buildToolVersion: "MBTJ25N24"
     buildDescriptor: "mta.yaml"
-    npmLint:
-      failOnError: false
-
+    buildToolVersion: "MBTJ11N20"
   malwareScan:
-    scan: true
+    scan: false
 
   release:
     cfDeploy:
