@@ -1,0 +1,19 @@
+---
+stages:
+  build:
+    buildTool: "mta"
+    buildToolVersion: "MBTJ25N24"
+    buildDescriptor: "mta.yaml"
+    npmLint:
+      failOnError: false
+
+  malwareScan:
+    scan: true
+
+  release:
+    cfDeploy:
+      strategy: "default"
+      apiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
+      org: "726101a8trial"
+      space: "dev"
+      credential: "deployonbtp"
